@@ -8,27 +8,26 @@ import { createSunflower } from "./seeds/sunflower.js"
 import { createWheat } from "./seeds/wheat.js"
 import { addPlant } from "./field.js"
 import { usePlants } from "./field.js"
-// const yearlyPlan = createPlan();
-// console.log(yearlyPlan);
+const yearlyPlan = createPlan();
+console.log(yearlyPlan);
 
-const asparagusSeed = createAsparagus()
-console.log(asparagusSeed)
+ const asparagusSeed = createAsparagus()
+ console.log(asparagusSeed)
 
 const cornSeed = createCorn()
 console.log(cornSeed)
 
-const potatoSeed = createPotato()
-console.log(potatoSeed)
+ const potatoSeed = createPotato()
+ console.log(potatoSeed)
 
-const soybean = createSoybean()
-console.log(soybean)
+ const soybean = createSoybean()
+ console.log(soybean)
 
-const sunflower = createSunflower()
+ const sunflower = createSunflower()
 console.log(sunflower)
 
 const wheat = createWheat()
 console.log(wheat)
 
-addPlant(potatoSeed);
-const newPlant = usePlants(addPlant)
+const newPlant = addPlant(createCorn)
 console.log(newPlant)
