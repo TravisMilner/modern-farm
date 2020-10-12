@@ -8,6 +8,7 @@ import { createSunflower } from "./seeds/sunflower.js"
 import { createWheat } from "./seeds/wheat.js"
 import { addPlant } from "./field.js"
 import { usePlants } from "./field.js"
+import { plantSeeds } from "./tractor.js"
 const yearlyPlan = createPlan();
 console.log(yearlyPlan);
 
@@ -29,8 +30,11 @@ console.log(sunflower)
 const wheat = createWheat()
 console.log(wheat)
 
-addPlant(soybean);
-addPlant(cornSeed);
-addPlant(sunflower);
+
+
+
+ plantSeeds(createPlan());
 const newPlant = usePlants();
-console.log(newPlant);
+
+
+console.log("THIS is the new field array" , newPlant);
