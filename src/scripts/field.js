@@ -1,3 +1,5 @@
+
+
 let fieldArray = [];
 
 export const addPlant = (seedObj) => {
@@ -5,15 +7,16 @@ export const addPlant = (seedObj) => {
         seedObj.forEach(element => {
             fieldArray.push(element)
             
+            
         });
-        return addPlant;
 
 
+    } else {
+        fieldArray.push(seedObj);
     }
    
 };
 
 export const usePlants = () => {
-    console.log(fieldArray)
     return fieldArray.slice();
 }

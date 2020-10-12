@@ -29,5 +29,8 @@ console.log(sunflower)
 const wheat = createWheat()
 console.log(wheat)
 
-const newPlant = addPlant(createCorn)
-console.log(newPlant)
+addPlant(soybean);
+addPlant(cornSeed);
+addPlant(sunflower);
+const newPlant = usePlants();
+console.log(newPlant);
